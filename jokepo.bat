@@ -19,9 +19,9 @@ echo [F] Finalizar o Programa
 echo ===========================
 echo 	Placar
 echo ===========================
- echo Vitoria %vitoria_jogador%
- echo Derrota %vitoria_maquina%
- echo Empate %empate%
+echo Vitoria %vitoria_jogador%
+echo Derrota %vitoria_maquina%
+echo Empate %empate%
 
 :pc
 set /a jogada=(%random% %%4) + 1
@@ -106,12 +106,3 @@ if %jogada% == 3 (goto:vitoria_maquina)
 if %jogada% == 4 (goto:empate)
 if %jogada% == 5 (goto:vitoria_jogador) 
 goto:inicio
-
-
-
-
-REM echo ------------------------------
-REM echo Numero Sorteado: %numero%
-REM echo Qtd de Sorteios %cont%
-REM echo ------------------------------
-REM echo.
